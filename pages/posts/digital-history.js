@@ -21,7 +21,7 @@ export default function DigitalHistory() {
                 </li>
                 <li>
                 <section className="historical">
-                        <h1>2000 - Herr X</h1>
+                        <h1>2000</h1>
                         <div>
                             <p>👪 5 person household, Hamburg, Deutschland</p>
                             <p>⏲️ Total Usage: 200 hours</p>
