@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function DeviceStatus({ hoursUsed, status, failureDetected, serviceMessage = 'Dustbin needs emptying', tiny = true }) {
+export default function DeviceStatus({ hoursUsed, status, failureDetected, serviceMessage = 'Filter needs emptying', tiny = true }) {
     const showServicingNeededMessage = status === "WARNING";
     let icon;
     switch (status) {
