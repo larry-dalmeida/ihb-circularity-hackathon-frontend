@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function DigitalPassport() {
   return (
-    <section>
+    <section className='link-list'>
         <h2>Digital Pass</h2>
         <ul>
           <li><Link href="/posts/digital-history">Digital History</Link></li>

@@ -1,14 +1,17 @@
 import Link from 'next/link';
 import DigitalPassport from '@components/DigitalPassport'
 import DeviceStatus from '@components/DeviceStatus';
+import CareRepair from '@components/CareRepair';
 
 export default function device() {
   return (
     <div className='page-container'>
       <p>Points: 350</p>
       <h1>Coffee Machine</h1>
+      <p>Model: CM332 Bean Maker</p>
+      <img src="https://www.miele.de/pmedia/06/Z13/20000190313-000-00_20000190313.jpg" />
       <DeviceStatus status="WARNING" hoursUsed={150} tiny={false} />
-      <div>
+      <div className='select-box'>
         <select>
           <option>Programs</option>
           <option>Caffe Latte</option>
@@ -20,13 +23,7 @@ export default function device() {
           <option>Espresso</option>
         </select>
       </div>
-      <ul>
-        <li><Link href="/posts/care-instructions">Care Instructions</Link></li>
-        <li><Link href="/posts/manual">Manual</Link></li>
-        <li><Link href="/posts/faq">FAQ</Link></li>
-        <li><Link href="/posts/troubleshoot">Troubleshoot</Link></li>
-      </ul>
-
+      <CareRepair />
       <DigitalPassport />
     </div>
   );

@@ -1,16 +1,18 @@
 import Link from 'next/link';
 import DigitalPassport from '@components/DigitalPassport';
 import DeviceStatus from '@components/DeviceStatus';
-
+import CareRepair from '@components/CareRepair';
 
 export default function device() {
   return (
     <div className='page-container'>
       <p>Points: 350</p>
       <h1>Oven</h1>
+      <p>Model: OV123 Intelligent Heating</p>
+      <img src="https://www.miele.de/pmedia/30/Z11/20000150236-000-00_20000150236.png" />
       <DeviceStatus status="OK" hoursUsed={200} tiny={false} />
       <div>
-        <select>
+        <select className='select-box'>
         <option>Programs</option>
           <option>Auto roast</option>
           <option>Conventional heat</option>
@@ -20,13 +22,7 @@ export default function device() {
           <option>Grill</option>
         </select>
       </div>
-      <ul>
-        <li><Link href="/posts/care-instructions">Care Instructions</Link></li>
-        <li><Link href="/posts/manual">Manual</Link></li>
-        <li><Link href="/posts/faq">FAQ</Link></li>
-        <li><Link href="/posts/troubleshoot">Troubleshoot</Link></li>
-      </ul>
-
+      <CareRepair />
       <DigitalPassport />
     </div>
   );

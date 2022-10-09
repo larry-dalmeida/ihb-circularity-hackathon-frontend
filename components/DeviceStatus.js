@@ -19,7 +19,7 @@ export default function DeviceStatus({ hoursUsed, status, failureDetected, servi
     }
     const statusMessage = `${icon} ${status}`
     return (
-        <section>
+        <section className="device-status">
             <p>Total Usage: {hoursUsed} hours</p>
             <p>{statusMessage}</p>
             {!tiny && <Messages showServicingNeededMessage={showServicingNeededMessage} serviceMessage={serviceMessage} failureDetected={failureDetected} />}
@@ -31,6 +31,6 @@ const Messages = ({ showServicingNeededMessage, failureDetected, serviceMessage 
     <>
         {showServicingNeededMessage && <p>{serviceMessage}</p>}
         {!failureDetected && <p><Link href="/posts/troubleshoot">Having trouble?</Link></p>}
-        {failureDetected && <p>Our sensors have detected a failure! <Link href="/posts/solution-options">Here are the solutions we can offer</Link></p>}
+        {failureDetected && <p>Sensors detected a failure! <Link href="/posts/solution-options">Take Action →</Link></p>}
     </>
 )

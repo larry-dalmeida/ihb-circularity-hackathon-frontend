@@ -2,8 +2,14 @@ export default function Sustainability() {
     return (
         <div className='page-container'>
             <h1>Sustainability</h1>
-            <section>
-            <h2>Repurposing Components</h2>
+            <p>Conforming to ISO50001 standards, specifically:</p>
+            <ul>
+                <li>Decreased CO2 Emissions - Energy 1kWh</li>
+                <li>Decreased Water consumption on Eco-program - 3L water compared to 60 Degrees</li>
+            </ul>
+
+            <section className="mb">
+            <h2>Repurposing Components ⭕</h2>
             <p>The following components can be repurposed:</p>
             <ul>
                 <li>Console</li>
@@ -16,8 +22,8 @@ export default function Sustainability() {
             </ul>
             </section>
 
-            <section>
-            <h2>Recycling Material</h2>
+            <section className="mb">
+            <h2>Recycling Material ♻️</h2>
             <p>This appliance contains the following material that can be recycled:</p>
             <ul>
                 <li>Steel</li>

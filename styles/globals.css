@@ -36,7 +36,8 @@ code {
   align-items: center;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
   padding-left: 0;
 }
@@ -55,13 +56,70 @@ a:visited {
   color: #F59B00;
 }
 
-button {
+button,
+.button {
   background-color: transparent;
   color: #fff;
   border: 2px solid #8C0014;
+  margin-bottom: 20px;
   padding: 1rem;
 }
 
-button:hover {
+button:hover,
+.button:hover {
   background-color: #8C0014;
+}
+
+.img-container img {
+  height: auto;
+  width: 100%;
+}
+
+.map ul li {
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+.map ul {
+  margin-left: 20px;
+}
+
+
+.link-list {
+  margin-top: 40px;
+}
+
+.link-list li {
+  margin-bottom: 10px;
+}
+
+.select-box {
+  margin-top: 40px;
+}
+
+.select-box select,
+.select-box option {
+  width: 100%;
+}
+
+.mb {
+  margin-bottom: 40px;
+}
+
+.historical {
+  margin-bottom: 40px;
+}
+
+.components-list {
+  padding-left: 40px;
+}
+
+.components-list > li {
+  margin-bottom: 40px;
+}
+
+.material-composition-list {
+  margin-top: 20px;
+  padding-left: 40px;
 }

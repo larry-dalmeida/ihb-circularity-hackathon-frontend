@@ -11,7 +11,7 @@ export default function DataHierarchy() {
                     </section>
                     <section>
                         <h2>Components</h2>
-                        <ol>
+                        <ol className="components-list">
                             <li>
                                 <section>
                                     <h3>Console</h3>
@@ -19,7 +19,7 @@ export default function DataHierarchy() {
                                     <p>Available for replacement</p>
                                     <p>Can be repurposed</p>
                                 </section>
-                                <section>
+                                <section className="material-composition-list">
                                     <h4>Material Composition</h4>
                                     <ul>
                                         <li>
@@ -40,7 +40,7 @@ export default function DataHierarchy() {
                                     <p>Unavailable for replacement - no longer produced</p>
                                     <p>Can be repurposed</p>
                                 </section>
-                                <section>
+                                <section className="material-composition-list">
                                     <h4>Material Composition</h4>
                                     <ul>
                                         <li>
@@ -61,7 +61,7 @@ export default function DataHierarchy() {
                                     <p>Unavailable for replacement - no longer produced</p>
                                     <p>Can be repurposed</p>
                                 </section>
-                                <section>
+                                <section className="material-composition-list">
                                     <h4>Material Composition</h4>
                                     <p>Unavailable</p>
                                 </section>
@@ -73,7 +73,7 @@ export default function DataHierarchy() {
                                     <p>Available for replacement</p>
                                     <p>Can be repurposed</p>
                                 </section>
-                                <section>
+                                <section className="material-composition-list">
                                     <h4>Material Composition</h4>
                                     <p>Unavailable</p>
                                 </section>
