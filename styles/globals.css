@@ -56,8 +56,12 @@ a:visited {
 }
 
 button {
-  background-color: #8C0014;
+  background-color: transparent;
   color: #fff;
-  border: #8C0014;
+  border: 2px solid #8C0014;
   padding: 1rem;
+}
+
+button:hover {
+  background-color: #8C0014;
 }
