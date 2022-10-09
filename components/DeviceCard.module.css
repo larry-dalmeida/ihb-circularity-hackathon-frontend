@@ -1,5 +1,6 @@
-.device-card {
-  width: 80%;
+.deviceCard {
+  width: 100%;
   padding: 20px;
-  border-top: 1px solid #eaeaea;
+  margin-bottom: 20px;
+  border: 1px solid #eaeaea;
 }

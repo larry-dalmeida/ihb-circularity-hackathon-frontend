@@ -1,6 +1,6 @@
 export default function Troubleshoot() {
     return (
-        <div>
+        <div className='page-container'>
             <h1>Troubleshoot</h1>
             <ul>
                 <li>
@@ -19,6 +19,15 @@ export default function Troubleshoot() {
                         </h2>
                         <p>Our experts will take a look and determine the impact of the damage.</p>
                         <button>Record</button>
+                    </section>
+                </li>
+                <li>
+                <section>
+                        <h2>
+                            Talk to our chatbot
+                        </h2>
+                        <p>All our expertise on fixing our appliances in one place</p>
+                        <button>Meet Chatbot</button>
                     </section>
                 </li>
             </ul>

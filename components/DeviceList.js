@@ -6,7 +6,7 @@ function DeviceList({ devices }) {
         <ul>
             {devices.map((device) => (
                 <li key={device.id}>
-                    <DeviceCard title={device.title} status={device.status} href={`/devices/${encodeURIComponent(device.slug)}`}/>
+                    <DeviceCard {...device} href={`/devices/${encodeURIComponent(device.slug)}`} />
                 </li>
             ))}
         </ul>

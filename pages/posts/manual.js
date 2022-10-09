@@ -1,6 +1,6 @@
 export default function Manual() {
     return (
-        <div>
+        <div className='page-container'>
             <h1>Manual</h1>
             <ul>
                 <li>

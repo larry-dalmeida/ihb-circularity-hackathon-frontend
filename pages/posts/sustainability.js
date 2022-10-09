@@ -1,0 +1,30 @@
+export default function Sustainability() {
+    return (
+        <div className='page-container'>
+            <h1>Sustainability</h1>
+            <section>
+            <h2>Repurposing Components</h2>
+            <p>The following components can be repurposed:</p>
+            <ul>
+                <li>Console</li>
+                <li>Agitator</li>
+                <li>Tub</li>
+                <li>Motor</li>
+                <li>Water Pump</li>
+                <li>Drain Hose</li>
+                <li>Inlet Valve</li>
+            </ul>
+            </section>
+
+            <section>
+            <h2>Recycling Material</h2>
+            <p>This appliance contains the following material that can be recycled:</p>
+            <ul>
+                <li>Steel</li>
+                <li>Aluminium</li>
+                <li>Rubber</li>
+            </ul>
+            </section>
+        </div>
+    )
+}

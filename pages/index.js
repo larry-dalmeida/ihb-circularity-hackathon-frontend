@@ -1,13 +1,12 @@
 import Head from 'next/head'
 import Header from '@components/Header'
-import Footer from '@components/Footer'
 import DevicesList from '@components/DeviceList'
 
 const devices = [
-  { title: "Vacuum Cleaner", status: "OK", slug: "vacuum-cleaner" },
-  { title: "Oven", status: "OK", slug: "oven" },
-  { title: "Coffee Machine", status: "WARNING", slug: "coffee-machine" },
-  { title: "Washing Machine", status: "ERROR", slug: "washing-machine" },
+  { title: "Coffee Machine", status: "WARNING", slug: "coffee-machine", hoursUsed: 150 },
+  { title: "Washing Machine", status: "ERROR", slug: "washing-machine", hoursUsed: 600 },
+  { title: "Vacuum Cleaner", status: "OK", slug: "vacuum-cleaner", hoursUsed: 50 },
+  { title: "Oven", status: "OK", slug: "oven", hoursUsed: 200 }
 ]
 
 export default function Home() {
@@ -22,8 +21,6 @@ export default function Home() {
         <Header title="Your Appliances" />
         <DevicesList devices={devices} />
       </main>
-
-      <Footer />
     </div>
   )
 }

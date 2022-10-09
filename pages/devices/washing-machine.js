@@ -1,26 +1,27 @@
 import Link from 'next/link';
+import DigitalPassport from '@components/DigitalPassport';
+import DeviceStatus from '@components/DeviceStatus';
 
 export default function device() {
   return (
-    <>
+    <div className='page-container'>
       <p>Points: 350</p>
       <h1>Washing Machine</h1>
+      <p>Model: WCA030 WCS Active</p>
+      <img src="https://www.miele.de/pmedia/30/Z11/20000185614-000-00_20000185614.png" />
+      <DeviceStatus status="ERROR" hoursUsed={600} failureDetected={true} tiny={false}/>
       <div>
-          <p>Total Usage: 600 hours</p>
-          <p>Status: Error</p>
-        </div>
-      <div>
-      <select>
-        <option>Programs</option>
-        <option>Cottons</option>
-        <option>Dark garments/Denim</option>
-        <option>ECO 40-60</option>
-        <option>Express 20</option>
-        <option>Minimum iron</option>
-        <option>Proofing</option>
-        <option>Shirts</option>
-        <option>Woollens</option>
-      </select>
+        <select>
+          <option>Programs</option>
+          <option>Cottons</option>
+          <option>Dark garments/Denim</option>
+          <option>ECO 40-60</option>
+          <option>Express 20</option>
+          <option>Minimum iron</option>
+          <option>Proofing</option>
+          <option>Shirts</option>
+          <option>Woollens</option>
+        </select>
       </div>
       <ul>
         <li><Link href="/posts/care-instructions">Care Instructions</Link></li>
@@ -29,15 +30,7 @@ export default function device() {
         <li><Link href="/posts/troubleshoot">Troubleshoot</Link></li>
       </ul>
 
-      <section>
-        <h2>Digital Pass</h2>
-        <ul>
-        <li><Link href="/posts/history">Digital History</Link></li>
-        <li><Link href="/posts/hierarchy">Data Hierarchy</Link></li>
-        <li><Link href="/posts/composition">Material Composition</Link></li>
-        <li><Link href="/posts/sustainability">Sustainability</Link></li>
-        </ul>
-      </section>
-    </>
+      <DigitalPassport />
+    </div>
   );
 }

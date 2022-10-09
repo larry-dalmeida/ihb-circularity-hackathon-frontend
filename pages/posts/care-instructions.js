@@ -1,6 +1,6 @@
 export default function CareInstructions() {
     return (
-        <div>
+        <div className='page-container'>
             <h1>Care Instructions</h1>
             <ol>
                 <li>
